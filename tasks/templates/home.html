@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main class="contine">
+<main class="container py-5">
     <section class="card card-body">
-        <h1>Bienvenido a TaskMaster: ¡Tu Asistente de Tareas!</h1>
-        <p>
+        <h1 class="text-center">Django App</h1>
+        <p class="text-center">
             <h4>
                 ¡Bienvenido a TaskMaster, tu compañero ideal para la organización y gestión de tareas!
             </h4>
@@ -23,9 +23,19 @@
           ¿Cómo Empezar?
           Es muy sencillo. Solo necesitas crear una cuenta y comenzar a añadir tus tareas. Personaliza tus listas y ajusta la plataforma a tus necesidades personales o profesionales.
     
-          Únete a Nuestra Comunidad
-         ¡No esperes más! Únete a nuestra comunidad y comienza a organizar tu vida con TaskMaster. Juntos, podemos ayudarte a alcanzar tus objetivos y mantener el control de tu tiempo
+         <h5>Únete a Nuestra Comunidad
+            ¡No esperes más! Únete a nuestra comunidad y comienza a organizar tu vida con TaskMaster. Juntos, podemos ayudarte a alcanzar tus objetivos y mantener el control de tu tiempo</h5>
        </p>
+
+       <div class="text-center">
+        <a class="btn btn-primary" href="/signin/">
+            Sign In
+        </a>
+        <a class="btn btn-primary" href="/signup/">
+            Sign Up
+        </a>
+       </div>
+
     </section>
 </main>
 {% endblock %}
